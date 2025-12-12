@@ -38,12 +38,12 @@ CREATE TABLE "stores" (
      )
 );
 
-CREATE TABLE "warrandy" (
+CREATE TABLE "warranty" (
     "claim_id" varchar(20)   NOT NULL,
     "claim_date" date   NOT NULL,
     "sale_id" varchar(50)   NOT NULL,
     "repair_status" varchar(20)   NOT NULL,
-    CONSTRAINT "pk_warrandy" PRIMARY KEY (
+    CONSTRAINT "pk_warranty" PRIMARY KEY (
         "claim_id"
      )
 );
@@ -57,6 +57,6 @@ REFERENCES "stores" ("store_id");
 ALTER TABLE "sales" ADD CONSTRAINT "fk_sales_product_id" FOREIGN KEY("product_id")
 REFERENCES "products" ("product_id");
 
-ALTER TABLE "warrandy" ADD CONSTRAINT "fk_warrandy_sale_id" FOREIGN KEY("sale_id")
+ALTER TABLE "warranty" ADD CONSTRAINT "fk_warranty_sale_id" FOREIGN KEY("sale_id")
 REFERENCES "sales" ("sale_id");
 
