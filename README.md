@@ -18,7 +18,7 @@
 ---
 
 ## Структура репозитория
-
+```
 apple-retail-sales-analytics
 │
 ├── data/
@@ -39,7 +39,7 @@ apple-retail-sales-analytics
 │ ├── 1.Dashboard Executive Overview.jpg
 │ ├── 2.Dashboard Product & Performance Analysis.jpg
 │ ├── 3.Dashboard Quality & Risks.jpg
-
+```
 ---
 
 ## Используемая СУБД
